@@ -1,0 +1,112 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: #ffffff;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Header */
+header {
+  padding: 50px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 2px solid #0f3460;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #e94560;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+/* Sections */
+section {
+  padding: 50px 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #e94560;
+}
+
+p, ul {
+  max-width: 600px;
+  margin: auto;
+  font-size: 1.1rem;
+}
+
+/* Skills */
+ul {
+  list-style: none;
+}
+
+ul li {
+  background: #0f3460;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+}
+
+/* Projects */
+.project-card {
+  background: #0f3460;
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 400px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  background: #e94560;
+}
+
+/* Contact */
+a {
+  color: #e94560;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-top: 2px solid #0f3460;
+}
+
+/* Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
